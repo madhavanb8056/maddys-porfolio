@@ -1,0 +1,24 @@
+<section class="bg-gradient-to-r from-[var(--card-background-color)] via-[#2a3447] to-[var(--card-background-color)] p-6 sm:p-8 rounded-xl shadow-lg" id="contact">
+  <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight pb-6 text-center animated-gradient-text">Get In Touch!</h2>
+  <form class="space-y-6 max-w-xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block text-[var(--text-color)] text-sm font-medium leading-normal pb-2" for="name">Your Name</label>
+        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[var(--text-color)] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[#1e1633] focus:border-none h-12 sm:h-14 placeholder:text-[var(--muted-text-color)] p-4 text-base font-normal leading-normal" id="name" placeholder="Enter your name" type="text"/>
+      </div>
+      <div>
+        <label class="block text-[var(--text-color)] text-sm font-medium leading-normal pb-2" for="email">Your Email</label>
+        <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[var(--text-color)] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[#1e1633] focus:border-none h-12 sm:h-14 placeholder:text-[var(--muted-text-color)] p-4 text-base font-normal leading-normal" id="email" placeholder="Enter your email" type="email"/>
+      </div>
+    </div>
+    <div>
+      <label class="block text-[var(--text-color)] text-sm font-medium leading-normal pb-2" for="message">Your Message</label>
+      <textarea class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[var(--text-color)] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[#1e1633] focus:border-none min-h-36 placeholder:text-[var(--muted-text-color)] p-4 text-base font-normal leading-normal" id="message" placeholder="Enter your message"></textarea>
+    </div>
+    <div class="flex justify-center">
+      <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] hover:from-[var(--secondary-color)] hover:to-[var(--primary-color)] transition-all duration-300 text-white text-base font-bold leading-normal tracking-[0.015em] hover-lift" type="submit">
+        <span class="truncate">Send Message</span>
+      </button>
+    </div>
+  </form>
+</section>
