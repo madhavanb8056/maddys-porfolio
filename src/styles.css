@@ -1,0 +1,94 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #8b5cf6;
+  --secondary-color: #ec4899;
+  --accent-color: #10b981;
+  --background-color: #111827;
+  --card-background-color: #1f2937;
+  --text-color: #f3f4f6;
+  --muted-text-color: #9ca3af;
+}
+
+body {
+  font-family: "Poppins", "Noto Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Add all the custom styles from your original HTML here */
+.hover-lift {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.animated-gradient-text {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color), var(--primary-color));
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 7s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* global styles.css or styles.scss */
+.nav-link {
+  @apply text-[var(--text-color)] hover:text-[var(--primary-color)] transition-colors duration-300 text-sm font-medium;
+}
+
+.nav-link-mobile {
+  @apply text-[var(--text-color)] text-lg font-semibold hover:text-[var(--primary-color)] transition duration-300;
+}
+/* Add all other custom styles from your original HTML */
+
+@keyframes slide-in-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-down {
+  animation: slide-in-down 0.6s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out forwards;
+}
+
+@keyframes text-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-text-pop {
+  animation: text-pop 0.7s ease-out forwards;
+}
