@@ -1,17 +1,89 @@
-<section class="py-12 bg-gradient-to-br from-[var(--primary-color)] via-[var(--secondary-color)] to-[var(--accent-color)] rounded-xl shadow-xl p-8" id="education">
-  <h2 class="text-3xl sm:text-4xl font-bold leading-tight tracking-tight mb-8 text-center text-white">Education</h2>
-  <div class="grid md:grid-cols-2 gap-8">
-    <div class="education-card hover-lift">
-      <h3 class="text-2xl font-bold mb-2">Master of Science in Computer Science</h3>
-      <p class="text-lg font-medium mb-1">University of Advanced Technology</p>
-      <p class="text-sm opacity-80">Graduated: 2017</p>
-      <p class="mt-3 text-sm opacity-90">Specialized in Human-Computer Interaction and Web Development. Thesis on "Optimizing User Experience in Single Page Applications."</p>
-    </div>
-    <div class="education-card hover-lift">
-      <h3 class="text-2xl font-bold mb-2">Bachelor of Engineering in Software Engineering</h3>
-      <p class="text-lg font-medium mb-1">Tech Institute of Engineering</p>
-      <p class="text-sm opacity-80">Graduated: 2015</p>
-      <p class="mt-3 text-sm opacity-90">Focused on software development lifecycle, data structures, and algorithms. Final year project involved creating a collaborative coding platform.</p>
+<section class="py-16 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-[var(--primary-color)] via-[var(--secondary-color)] to-[var(--accent-color)] rounded-xl shadow-xl overflow-hidden" id="education">
+  <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white text-center mb-16 animate-fade-in-up">Academic Milestones</h2>
+
+  <div class="relative max-w-6xl mx-auto overflow-hidden">
+    <!-- Timeline line -->
+    <div class="absolute top-1/2 transform -translate-y-1/2 w-full h-1 bg-white/30 z-0"></div>
+
+    <div class="flex gap-10 sm:gap-12 md:gap-16 lg:gap-20 items-start justify-start px-4 pb-4 animate-marquee whitespace-nowrap">
+
+      <!-- Milestone Cards -->
+      <div class="min-w-[260px] max-w-[300px] sm:min-w-[280px] relative group perspective inline-block">
+        <div class="card w-full transition duration-700 ease-in-out">
+          <div class="card-inner w-full h-full whitespace-nowrap ">
+            <div class="card-front bg-white/20 backdrop-blur-xl text-white p-6 rounded-xl shadow-lg w-full h-full">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full bg-[var(--primary-color)] flex items-center justify-center font-bold text-xl">🎓</div>
+                <h3 class="text-xl font-semibold">MSc Computer Science</h3>
+              </div>
+              <p class="text-sm">University of Advanced Technology</p>
+              <p class="text-sm opacity-80">Graduated: 2017</p>
+            </div>
+            <div class="card-back bg-white/30 backdrop-blur-xl text-black p-6 rounded-xl shadow-lg w-full h-full">
+              <p class="text-sm leading-relaxed">Specialized in Human-Computer Interaction and Web Development. Thesis on optimizing UX in SPAs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-xs text-white/80 mt-2 animate-pulse">💡 Tap or Hover to flip</div>
+      </div>
+
+      <div class="min-w-[260px] max-w-[300px] sm:min-w-[280px] relative group perspective inline-block">
+        <div class="card w-full transition duration-700 ease-in-out">
+          <div class="card-inner w-full h-full whitespace-nowrap ">
+            <div class="card-front bg-white/20 backdrop-blur-xl text-white p-6 rounded-xl shadow-lg w-full h-full">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full bg-[var(--secondary-color)] flex items-center justify-center font-bold text-xl">📘</div>
+                <h3 class="text-xl font-semibold">BE Software Engineering</h3>
+              </div>
+              <p class="text-sm">Tech Institute of Engineering</p>
+              <p class="text-sm opacity-80">Graduated: 2015</p>
+            </div>
+            <div class="card-back bg-white/30 backdrop-blur-xl text-black p-6 rounded-xl shadow-lg w-full h-full">
+              <p class="text-sm leading-relaxed">Studied SDLC, data structures, and algorithms. Final year project on a collaborative coding platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-xs text-white/80 mt-2 animate-pulse">💡 Tap or Hover to flip</div>
+      </div>
+
+      <div class="min-w-[260px] max-w-[300px] sm:min-w-[280px] relative group perspective inline-block">
+        <div class="card w-full transition duration-700 ease-in-out">
+          <div class="card-inner w-full h-full whitespace-nowrap ">
+            <div class="card-front bg-white/20 backdrop-blur-xl text-white p-6 rounded-xl shadow-lg w-full h-full">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full bg-[var(--accent-color)] flex items-center justify-center font-bold text-xl">🎖️</div>
+                <h3 class="text-xl font-semibold">Diploma in Web Design</h3>
+              </div>
+              <p class="text-sm">Creative Design Academy</p>
+              <p class="text-sm opacity-80">Completed: 2013</p>
+            </div>
+            <div class="card-back bg-white/30 backdrop-blur-xl text-black p-6 rounded-xl shadow-lg w-full h-full">
+              <p class="text-sm leading-relaxed">Learned visual design principles, UI layout, and web usability. Built interactive design projects using Figma and HTML/CSS.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-xs text-white/80 mt-2 animate-pulse">💡 Tap or Hover to flip</div>
+      </div>
+
+      <div class="min-w-[260px] max-w-[300px] sm:min-w-[280px] relative group perspective inline-block">
+        <div class="card w-full transition duration-700 ease-in-out">
+          <div class="card-inner w-full h-full whitespace-nowrap ">
+            <div class="card-front bg-white/20 backdrop-blur-xl text-white p-6 rounded-xl shadow-lg w-full h-full">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center font-bold text-xl">🧠</div>
+                <h3 class="text-xl font-semibold">Self-Learning & Certifications</h3>
+              </div>
+              <p class="text-sm">Online Courses & Bootcamps</p>
+              <p class="text-sm opacity-80">Ongoing</p>
+            </div>
+            <div class="card-back bg-white/30 backdrop-blur-xl text-black p-6 rounded-xl shadow-lg w-full h-full">
+              <p class="text-sm leading-relaxed">Continuously upgrading skills via platforms like Coursera, Udemy, and YouTube. Emphasis on UI/UX, JavaScript, and animation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-xs text-white/80 mt-2 animate-pulse">💡 Tap or Hover to flip</div>
+      </div>
+
     </div>
   </div>
 </section>
